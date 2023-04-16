@@ -8,8 +8,11 @@
 
   --background: 255, 255, 255;
   --primary-color: #222121;
+  --primary-color-rgb: 34, 33, 33;
   --secondary-color: rgba(var(--primary-color-rgb), 0.8);
   --accent-color: #0480c1;
+  --accent-color-rgb: 4, 128, 193;
+  --line-color: rgba(var(--primary-color-rgb), 0.15);
 
   --primary-font-size: 1rem;
   --secondary-font-size: 0.8rem;
