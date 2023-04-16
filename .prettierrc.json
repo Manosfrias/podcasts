@@ -1,0 +1,14 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "^react",
+    "^[^.]",
+    "^\\.$|\\.(?!(s?css)$)([^.]*$)",
+    "^.+\\.s?css$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderParserPlugins": ["jsx", "typescript"],
+  "importOrderSortSpecifiers": true
+}
