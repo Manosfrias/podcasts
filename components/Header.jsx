@@ -1,3 +1,4 @@
+import { useAppContext } from "@/contexts/app-context";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -39,10 +40,12 @@ const Spinner = styled.span`
   }
 `;
 const Header = (props) => {
+  const { loading } = useAppContext();
+
   return (
     <Head {...props}>
       <Link href="/">Podcaster</Link>
-      <Spinner />
+      {loading && <Spinner />}
     </Head>
   );
 };

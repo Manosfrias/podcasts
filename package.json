@@ -13,15 +13,16 @@
     "test:ci": "jest --ci",
     "commit": "commit"
   },
-   "dependencies": {
+  "dependencies": {
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "moment": "^2.29.4",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.9"
   },
-   "devDependencies": {
+  "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@commitlint/prompt-cli": "^17.6.1",

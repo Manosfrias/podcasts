@@ -1,4 +1,5 @@
 import Header from "./Header";
+import { AppWrapper } from "@/contexts/app-context";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import styled from "styled-components";
@@ -10,7 +11,7 @@ const Main = styled.main`
 `;
 const Layout = ({ children }) => {
   return (
-    <>
+    <AppWrapper>
       <Head>
         <title>Podcaster</title>
         <meta name="description" content="Listen your favorites podcats" />
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
       </Head>
       <Header className={inter.className} />
       <Main className={inter.className}>{children}</Main>
-    </>
+    </AppWrapper>
   );
 };
 
