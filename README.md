@@ -20,7 +20,7 @@ Search the podcast that you like and enjoy listening their last episodes.
 <img src="https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white">
 </p>
 
-As server side, we are using localStorage after fetching the data for giving the user a better experience.
+As server side, we are using localStorage after fetching the data for providing a better user experience.
 
 ## :desktop_computer: Run locally
 
@@ -70,6 +70,12 @@ To deploy this project run
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## :woman_technologist: Contributing
+
+For contributing, the use of [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) are required. For making it easy, [commitlint](https://commitlint.js.org/) is added on the repository. Just run the next code on your terminal and follow the step by step guide.
+
+```bash
+  npm run commit
+```
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
