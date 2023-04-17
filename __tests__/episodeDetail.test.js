@@ -1,7 +1,5 @@
 import useGetEpisode from '@/hooks/use-get-episode'
 import episodeDummy from '@/mocks/episodeDummy'
-import podcastDummy from '@/mocks/podcastDummy'
-import PodcastPage from '@/pages/podcast/[id]'
 import EpisodePage from '@/pages/podcast/[id]/episode/[episodeId]'
 import { render, screen } from '@testing-library/react'
 

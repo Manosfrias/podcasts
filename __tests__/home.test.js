@@ -1,7 +1,6 @@
 import searchPodcasts from '@/api/podcasts/search-podcasts'
 import useGetPodcasts from '@/hooks/use-get-podcasts'
 import { podcasts } from '@/mocks/allPodcasts.json'
-import mockFetch from '@/mocks/mockFetch'
 import podcastsDummy from '@/mocks/podcastsDummy'
 import searchDummy from '@/mocks/searchDummy'
 import Home from '@/pages/index'
