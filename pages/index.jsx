@@ -1,26 +1,27 @@
-import Badged from "@/components/Badged";
-import Search from "@/components/Search";
-import SearchBar from "@/components/SearchBar";
-import ThumbPodcast from "@/components/ThumbPodcast";
-import useGetPodcasts from "@/hooks/use-get-podcasts";
-import useToggleLoading from "@/hooks/use-toggle-loading";
-import { useEffect, useState } from "react";
-import styled from "styled-components";
+import { useEffect, useState } from 'react'
+
+import Badged from '@/components/Badged'
+import Search from '@/components/Search'
+import SearchBar from '@/components/SearchBar'
+import ThumbPodcast from '@/components/ThumbPodcast'
+import useGetPodcasts from '@/hooks/use-get-podcasts'
+import useToggleLoading from '@/hooks/use-toggle-loading'
+import styled from 'styled-components'
 
 const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-`;
+`
 export default function Home() {
-  const initialPodcasts = useGetPodcasts();
-  const [podcasts, setPodcasts] = useState([]);
+  const initialPodcasts = useGetPodcasts()
+  const [podcasts, setPodcasts] = useState(initialPodcasts)
 
-  useToggleLoading(initialPodcasts?.length > 0);
+  useToggleLoading(initialPodcasts?.length > 0)
 
   useEffect(() => {
-    setPodcasts(initialPodcasts);
-  }, [initialPodcasts]);
+    setPodcasts(initialPodcasts)
+  }, [initialPodcasts])
 
   return (
     podcasts && (
@@ -37,5 +38,5 @@ export default function Home() {
         </Section>
       </>
     )
-  );
+  )
 }
