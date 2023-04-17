@@ -9,8 +9,9 @@ export default async function mockFetch(url) {
         json: async () => podcasts,
       }
     }
-    case 'https://dog.ceo/api/breed/husky/images':
-    case 'https://dog.ceo/api/breed/cattledog/images': {
+    case `https://api.allorigins.win/get?url=${encodeURIComponent(
+      'https://itunes.apple.com/lookup?id=1535809341&media=podcast&entity=podcastEpisode&limit=20',
+    )}`: {
       return {
         ok: true,
         status: 200,
