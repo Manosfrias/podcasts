@@ -19,6 +19,7 @@ describe('Podcaspage', () => {
     })
     expect(heading).toBeInTheDocument()
   })
+
   it('renders the image', async () => {
     const podcastId = '1535809341'
     const data = podcastDummy
@@ -30,8 +31,8 @@ describe('Podcaspage', () => {
     const image = screen.getByAltText('Icon for podcast The Joe Budden Podcast')
     expect(image).toBeInTheDocument()
   })
+
   it('renders the last 20 episodes + heading', async () => {
-    // Simular los datos que se están pasando al componente
     const podcastId = '1535809341'
     const data = podcastDummy
 
