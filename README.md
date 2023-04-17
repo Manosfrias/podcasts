@@ -1,11 +1,14 @@
 # :studio_microphone: Podcast
 
-<p >
+<p>
   <img src="https://img.shields.io/github/v/tag/Manosfrias/podcasts" />
-
 </p>
 
 Podcast is an app for listening the 100 best podcast on iTunes.
+
+Search the podcast that you like and enjoy listening their last episodes.
+
+<img src="./__private/usage.gif"  />
 
 ## :floppy_disk: Tech Stack
 
