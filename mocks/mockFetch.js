@@ -1,4 +1,4 @@
-import podcasts from './allPodcasts.json'
+import podcastsDummy from './podcastsDummy'
 
 export default async function mockFetch(url) {
   switch (url) {
@@ -6,7 +6,7 @@ export default async function mockFetch(url) {
       return {
         ok: true,
         status: 200,
-        json: async () => podcasts,
+        json: async () => podcastsDummy,
       }
     }
     case `https://api.allorigins.win/get?url=${encodeURIComponent(
@@ -15,7 +15,7 @@ export default async function mockFetch(url) {
       return {
         ok: true,
         status: 200,
-        json: async () => podcasts,
+        json: async () => podcastsDummy,
       }
     }
     default: {
