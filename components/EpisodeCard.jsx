@@ -36,7 +36,6 @@ const EpisodeCard = ({ data }) => {
           <Interweave
             newWindow={true}
             matchers={[new EmailMatcher('email'), new UrlMatcher('url')]}
-            mentionUrl="http://instagram.com/{{mention}}"
             noWrap
             content={desc}
           />
